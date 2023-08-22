@@ -1,0 +1,17 @@
+{% load static %}
+
+{% block styles %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="{% static 'landingPage.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'mobileLanding.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1 className="heading">Welcome to Mr Growbot</h1>
+    <img src="./static/gbr.png" alt="GBR Logo">
+    <p>Please sign in or create an account!</p>
+    <div class="button-container">
+      <button class="login-btn" onclick="window.location.href='login'">Login</button>
+      <button class="signup-btn" onclick="window.location.href='signup'">Sign up</button>
+  </div>
+{% endblock %}
